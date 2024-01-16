@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, StyleSheet, Image } from "react-native";
+import { View, StyleSheet, Image } from "react-native";
 import { mainColors } from "../utils/colors";
 import { movieTypes } from "../types/movieTypes";
 import { useNavigation, useRoute } from "@react-navigation/native";
@@ -34,11 +34,7 @@ const MovieDetails = () => {
       />
 
       <LinearGradient
-        colors={[
-          "rgba(0,0,0,1)",
-          "rgba(0,0,0,0.6)",
-          "rgba(0,0,0,0)"
-        ]}
+        colors={["rgba(0,0,0,1)", "rgba(0,0,0,0.6)", "rgba(0,0,0,0)"]}
         style={styles.content}
         end={{ x: 0.1, y: 0 }}
         start={{ x: 0.1, y: 0.4 }}

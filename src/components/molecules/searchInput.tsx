@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import { StyleSheet, View } from "react-native";
 import { Input } from "../atoms/input";
 import Icon from "react-native-vector-icons/Feather";

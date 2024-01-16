@@ -1,5 +1,10 @@
-import React, { FC } from "react";
-import { StyleSheet, TouchableWithoutFeedback, View, ViewStyle } from "react-native";
+import React from "react";
+import {
+  StyleSheet,
+  TouchableWithoutFeedback,
+  View,
+  ViewStyle
+} from "react-native";
 import Icon from "react-native-vector-icons/Feather";
 import { mainColors } from "../../utils/colors";
 
@@ -16,10 +21,10 @@ export const BtnIcon = ({
   size,
   onPress,
   backgroundColor,
-  containerStyle={}
+  containerStyle = {}
 }: btnIconProps) => {
   return (
-    <View style={[containerStyle,styles(backgroundColor, size).container]}>
+    <View style={[containerStyle, styles(backgroundColor, size).container]}>
       <TouchableWithoutFeedback onPress={onPress}>
         <Icon
           name={iconName ?? "plus"}

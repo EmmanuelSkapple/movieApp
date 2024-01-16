@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { useState } from "react";
 import { View, StyleSheet } from "react-native";
 import { mainColors } from "../utils/colors";
 import SearchInput from "../components/molecules/searchInput";
@@ -12,7 +12,6 @@ const Home = ({}: HomeProps) => {
     <View style={styles.container}>
       <SearchInput value={querySearch} onChangeText={setQuerySearch} />
       <MovieList searchQuery={querySearch} />
-   
     </View>
   );
 };

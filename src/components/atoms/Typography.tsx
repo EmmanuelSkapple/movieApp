@@ -3,11 +3,7 @@ import { Text, TextStyle } from "react-native";
 import { mainColors } from "../../utils/colors";
 
 interface TypographyProps {
-  variant?:
-    | "title"
-    | "subtitle"
-    | "paragraph"
-    | "superTitle"
+  variant?: "title" | "subtitle" | "paragraph" | "superTitle";
   color?: string;
   customedStyles?: TextStyle;
   isUpperCase?: boolean;

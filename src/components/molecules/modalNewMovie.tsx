@@ -1,11 +1,8 @@
 import React, { useState } from "react";
-import { Text, View, StyleSheet, Modal, ScrollView, Alert } from "react-native";
+import { View, StyleSheet, Modal, Alert } from "react-native";
 import { mainColors } from "../../utils/colors";
 import { screenHeight } from "../../utils/constants";
-import Typography from "../atoms/Typography";
-import InputLabel from "../atoms/inputLabel";
 import { movieFormTypes } from "../../types/movieTypes";
-import ButtonPrimary from "../atoms/buttonPrimary";
 import { BtnIcon } from "../atoms/btnIcon";
 import ImageMovieList from "./imageList";
 import FormNewMovie from "./formNewMovie";
@@ -17,7 +14,7 @@ interface ModalNewMovieProps {
   onRefresh: () => void;
 }
 
-const ModalNewMovie = ({ isOpen, onClose,onRefresh }: ModalNewMovieProps) => {
+const ModalNewMovie = ({ isOpen, onClose, onRefresh }: ModalNewMovieProps) => {
   const [movie, setMovie] = useState({
     title: "",
     description: "",
@@ -33,10 +30,10 @@ const ModalNewMovie = ({ isOpen, onClose,onRefresh }: ModalNewMovieProps) => {
       Alert.alert("Success", "Movie created successfully");
       onRefresh();
       onClose();
-    }else{
-        Alert.alert("Error", "Something went wrong");
+    } else {
+      Alert.alert("Error", "Something went wrong");
     }
-  } 
+  };
 
   return (
     <Modal
